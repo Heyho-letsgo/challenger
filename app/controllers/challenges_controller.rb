@@ -11,6 +11,10 @@ class ChallengesController < ApplicationController
   # GET /challenges/1.json
   def show
     logger.debug '*'*99
+    @participations = @challenge.participations
+    @participation = @challenge.participations.new
+    @users = @challenge.users
+
   end
 
   # GET /challenges/new
