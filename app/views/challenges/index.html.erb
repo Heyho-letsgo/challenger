@@ -16,7 +16,7 @@
   <tbody>
     <% @challenges.each do |challenge| %>
       <tr>
-        <td><%= challenge.title %></td>
+        <td><%= link_to challenge.title, challenge %></td>
         <td><%= challenge.description %></td>
         <td><%= challenge.expires_at %></td>
         <td><%= challenge.points %></td>
